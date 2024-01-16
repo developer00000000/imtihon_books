@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.heroContainer{
+    max-width: 1480px;
+    width: 90%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin for-tablet{
+    @media(max-width:992px) {
+       @content;
+    }
+}
+
+@mixin for-phone{
+    @media(max-width:580px) {
+       @content;
+    }
+}
+
+@mixin for-bigTablet{
+    @media(max-width:1190px) {
+       @content;
+    }
+}
+
+
+
+@import '../layout/nav/nav.scss';
+@import '../layout/footer/footer.scss';
+@import '../components/SideBar/sideBar.scss';
+@import '../components/Books/books.scss';
+@import '../pages/BooksDetail/booksDetail.scss';
+@import '../pages/Blog/blog.scss';
+@import '../pages/Shop/shop.scss';
+@import '../components/Swipper/swipper.scss'
